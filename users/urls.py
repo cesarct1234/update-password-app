@@ -1,6 +1,7 @@
+# users/urls.py
 from django.urls import path
-from .views import update_password
+from .views import CambiarContrasenaView
 
 urlpatterns = [
-    path('update-password/', update_password, name='update-password'),
+    path('cambiar-contrasena/', CambiarContrasenaView.as_view(), name='cambiar_contrasena'),
 ]
